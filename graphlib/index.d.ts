@@ -361,14 +361,14 @@ declare module "graphlib" {
 		 * @argument label - label value.
 		 * @returns the graph, allowing this to be chained with other functions.
 		 */
-		setGraph(label: string): Graph;
+		setGraph(label: any): Graph;
 
 		/**
 		 * Gets the graph label.
 		 * 
 		 * @returns currently assigned label for the graph or undefined if no label assigned.
 		 */
-		graph(): void | string;
+		graph(): void | any;
 
 		/**
 		 * Gets the number of nodes in the graph.
